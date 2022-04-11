@@ -7,7 +7,7 @@ use Laminas\View\Model\ViewModel;
 
 /**
  * Class AlphaController
- * @package AlphaModule\Controller
+ * @package AlphaModule\Controller\AlphaController
  */
 class AlphaController extends AbstractActionController
 {

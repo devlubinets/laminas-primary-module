@@ -4,17 +4,19 @@ namespace AlphaModule;
 
 use AlphaModule\Controller\AlphaController;
 use AlphaModule\Controller\Factory\AlphaControllerFactory;
+use AlphaModule\Process\AlphaProcess;
+use AlphaModule\Process\Factory\AlphaProcessFactory;
+use AlphaModule\Repository\AlphaRepository;
+use AlphaModule\Repository\Factory\RepositoryFactory;
+use AlphaModule\Service\AlphaService;
+use AlphaModule\Service\Factory\AlphaServiceFactory;
+use Laminas\Router\Http\Segment;
 
 return [
-    "controllers" => [
-        "factories" => [
-            AlphaController::class => AlphaControllerFactory::class,
-        ],
-    ],
     "router" => [
         "routes" => [
-            "module" => [
-                "type" => "Literal",
+            Module::ROUTE_NAME_MODULE => [
+                "type" => Segment::class,
                 "options" => [
                     "route" => Module::ROUTE_PREFIX,
                     "defaults" => [
@@ -23,7 +25,31 @@ return [
                     ],
                 ],
                 "may_terminate" => true,
+                "child_routes" => [
+                    Module::ROUTE_NAME_ACTIONS => [
+                        "type" => Segment::class,
+                        "options" => [
+                            "route" => "/:action[/:id]",
+                            "constraints" => [
+                                "action" => "[a-zA-Z][a-zA-Z0-9_-]*",
+                                "id" => "[0-9]+",
+                            ],
+                        ],
+                    ],
+                ],
             ],
+        ],
+    ],
+    "controllers" => [
+        "factories" => [
+            AlphaController::class => AlphaControllerFactory::class,
+        ],
+    ],
+    "service_manager" => [
+        "factories" => [
+            AlphaProcess::class => AlphaProcessFactory::class,
+            AlphaRepository::class => RepositoryFactory::class,
+            AlphaService::class => AlphaServiceFactory::class,
         ],
     ],
     "view_manager" => [
