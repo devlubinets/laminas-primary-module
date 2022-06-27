@@ -1,3 +1,3 @@
-# Alpha Module
+# Portal Module
 
 ## Initial module structure

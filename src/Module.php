@@ -1,21 +1,21 @@
 <?php
 
-namespace AlphaModule;
+namespace IarPortalModule;
 
 /**
  * Class Module
- * @package AlphaModule
+ * @package IarPortalModule
  */
 class Module
 {
     public const VERSION = "0.0.2";
-    public const ALPHA_CONFIG = "alpha-config";
+    public const PORTAL_CONFIG = "portal-config";
 
-    public const ROUTE_PREFIX = "/alpha-module";
+    public const ROUTE_PREFIX = "/iar-portal-module";
 
-    public const ROUTE_NAME_MODULE = "alpha-module";
+    public const ROUTE_NAME_MODULE = "iar-portal-module";
     public const ROUTE_NAME_ACTIONS = "actions";
-    public const ROUTE_MODULE_CHILD_ACTIONS = "alpha-module/actions";
+    public const ROUTE_MODULE_CHILD_ACTIONS = "iar-portal-module/actions";
 
     /**
      * @return array

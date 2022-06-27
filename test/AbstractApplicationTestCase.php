@@ -1,6 +1,6 @@
 <?php
 
-namespace AlphaModuleTest;
+namespace IarPortalModuleTest;
 
 use Laminas\Mvc\ApplicationInterface;
 use Laminas\ServiceManager\ServiceLocatorInterface;

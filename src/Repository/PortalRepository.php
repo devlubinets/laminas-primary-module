@@ -1,11 +1,11 @@
 <?php
 
-namespace AlphaModule\Repository;
+namespace IarPortalModule\Repository;
 
-use AlphaModule\Model\AlphaModel;
+use IarPortalModule\Model\PortalModel;
 
 /**  */
-class AlphaRepository
+class PortalRepository
 {
     /**  */
     public function __construct()
@@ -15,19 +15,19 @@ class AlphaRepository
 
     /**
      * @param int $id
-     * @return AlphaModel
+     * @return PortalModel
      */
-    public function findAlphaByID(int $id): AlphaModel
+    public function findPortalByID(int $id): PortalModel
     {
         // this could use a hydrator or manual object create. A Model should always be returned
 
-        $alphaModel = new AlphaModel();
-        $alphaModel->exchangeArray(
+        $portalModel = new PortalModel();
+        $portalModel->exchangeArray(
             [
                 "id" => $id,
             ]
         );
 
-        return $alphaModel;
+        return $portalModel;
     }
 }

@@ -1,10 +1,10 @@
 <?php
 
-namespace AlphaModule\Process;
+namespace IarPortalModule\Process;
 
 /**
  * Class ProcessInterface
- * @package AlphaModule\Process\ProcessInterface
+ * @package IarPortalModule\Process\ProcessInterface
  */
 interface ProcessInterface
 {

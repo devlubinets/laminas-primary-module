@@ -1,10 +1,10 @@
 <?php
 
-namespace AlphaModule\Response;
+namespace IarPortalModule\Response;
 
 /**
  * Class ResponseAbstract
- * @package AlphaModule\Response\ResponseAbstract
+ * @package IarPortalModule\Response\ResponseAbstract
  */
 abstract class ResponseAbstract implements ResponseInterface
 {

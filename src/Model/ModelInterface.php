@@ -1,10 +1,10 @@
 <?php
 
-namespace AlphaModule\Model;
+namespace IarPortalModule\Model;
 
 /**
  * Class ModelInterface
- * @package AlphaModule\Model\ModelInterface
+ * @package IarPortalModule\Model\ModelInterface
  */
 interface ModelInterface
 {
