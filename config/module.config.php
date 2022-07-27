@@ -1,15 +1,15 @@
 <?php
 
-namespace IarPortalModule;
+namespace AlphaModule;
 
-use IarPortalModule\Controller\PortalController;
-use IarPortalModule\Controller\Factory\PortalControllerFactory;
-use IarPortalModule\Process\PortalProcess;
-use IarPortalModule\Process\Factory\PortalProcessFactory;
-use IarPortalModule\Repository\PortalRepository;
-use IarPortalModule\Repository\Factory\RepositoryFactory;
-use IarPortalModule\Service\PortalService;
-use IarPortalModule\Service\Factory\PortalServiceFactory;
+use AlphaModule\Controller\AlphaController;
+use AlphaModule\Controller\Factory\AlphaControllerFactory;
+use AlphaModule\Process\AlphaProcess;
+use AlphaModule\Process\Factory\AlphaProcessFactory;
+use AlphaModule\Repository\AlphaRepository;
+use AlphaModule\Repository\Factory\RepositoryFactory;
+use AlphaModule\Service\AlphaService;
+use AlphaModule\Service\Factory\AlphaServiceFactory;
 use Laminas\Router\Http\Segment;
 
 return [
@@ -20,7 +20,7 @@ return [
                 "options" => [
                     "route" => Module::ROUTE_PREFIX,
                     "defaults" => [
-                        "controller" => PortalController::class,
+                        "controller" => AlphaController::class,
                         "action" => "index",
                     ],
                 ],
@@ -42,23 +42,23 @@ return [
     ],
     "controllers" => [
         "factories" => [
-            PortalController::class => PortalControllerFactory::class,
+            AlphaController::class => AlphaControllerFactory::class,
         ],
     ],
     "service_manager" => [
         "factories" => [
-            PortalProcess::class => PortalProcessFactory::class,
-            PortalRepository::class => RepositoryFactory::class,
-            PortalService::class => PortalServiceFactory::class,
+            AlphaProcess::class => AlphaProcessFactory::class,
+            AlphaRepository::class => RepositoryFactory::class,
+            AlphaService::class => AlphaServiceFactory::class,
         ],
     ],
     "view_manager" => [
         "not_found_template" => "error/404",
         "exception_template" => "error/index",
         "template_map" => [
-            "layout/layout" => __DIR__ . "/../view/iar-portal-module/layout.phtml",
-            "error/404" => __DIR__ . "/../view/iar-portal-module/error/404.phtml",
-            "error/index" => __DIR__ . "/../view/iar-portal-module/error/index.phtml",
+            "layout/layout" => __DIR__ . "/../view/alpha-module/layout.phtml",
+            "error/404" => __DIR__ . "/../view/alpha-module/error/404.phtml",
+            "error/index" => __DIR__ . "/../view/alpha-module/error/index.phtml",
         ],
         "template_path_stack" => [
             __DIR__ . "/../view",

@@ -1,5 +1,5 @@
 {
-  "name": "iss-module/iar-portal-module",
+  "name": "iss-module/alpha-module",
   "require": {
     "php": ">=7.4",
     "laminas/laminas-mvc": "^3.1",
@@ -11,17 +11,17 @@
   },
   "autoload": {
     "psr-4": {
-      "IarPortalModule\\": "src/"
+      "AlphaModule\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "IarPortalModuleTest\\": "test/"
+      "AlphaModuleTest\\": "test/"
     }
   },
   "extra": {
     "laminas": {
-      "component": "IarPortalModule"
+      "component": "AlphaModule"
     }
   },
   "scripts": {

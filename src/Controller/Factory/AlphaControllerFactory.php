@@ -1,15 +1,15 @@
 <?php
 
-namespace IarPortalModule\Controller\Factory;
+namespace AlphaModule\Controller\Factory;
 
 use Interop\Container\ContainerInterface;
 use Laminas\ServiceManager\Factory\FactoryInterface;
 
 /**
- * Class PortalControllerFactory
- * @package IarPortalModule\Controller\Factory
+ * Class AlphaControllerFactory
+ * @package AlphaModule\Controller\Factory
  */
-class PortalControllerFactory implements FactoryInterface
+class AlphaControllerFactory implements FactoryInterface
 {
     /**
      * @param ContainerInterface $container

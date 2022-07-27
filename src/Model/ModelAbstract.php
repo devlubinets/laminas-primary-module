@@ -1,12 +1,12 @@
 <?php
 
-namespace IarPortalModule\Model;
+namespace AlphaModule\Model;
 
 use ReflectionClass;
 
 /**
  * Class ModelAbstract
- * @package IarPortalModule\ModelAbstract
+ * @package AlphaModule\ModelAbstract
  */
 abstract class ModelAbstract implements ModelInterface
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace IarPortalModuleTest\Controller;
+namespace AlphaModuleTest\Controller;
 
-use IarPortalModule\Controller\PortalController;
-use IarPortalModule\Module;
+use AlphaModule\Controller\AlphaController;
+use AlphaModule\Module;
 use Exception;
 use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 
 /** */
-class PortalControllerTest extends AbstractHttpControllerTestCase
+class AlphaControllerTest extends AbstractHttpControllerTestCase
 {
     /**  */
     public function setUp(): void
@@ -17,7 +17,7 @@ class PortalControllerTest extends AbstractHttpControllerTestCase
             [
                 "modules" => [
                     "Laminas\Router",
-                    "IarPortalModule",
+                    "AlphaModule",
                 ],
                 "module_listener_options" => [
                     "use_laminas_loader" => false,
@@ -38,10 +38,10 @@ class PortalControllerTest extends AbstractHttpControllerTestCase
         $this->dispatch(Module::ROUTE_PREFIX);
 
         $this->assertResponseStatusCode(200);
-        $this->assertModuleName("IarPortalModule");
-        $this->assertControllerName(PortalController::class);
-        $this->assertControllerClass("PortalController");
-        $this->assertMatchedRouteName("iar-portal-module");
+        $this->assertModuleName("AlphaModule");
+        $this->assertControllerName(AlphaController::class);
+        $this->assertControllerClass("AlphaController");
+        $this->assertMatchedRouteName("alpha-module");
         $this->assertActionName("index");
     }
 
@@ -55,9 +55,9 @@ class PortalControllerTest extends AbstractHttpControllerTestCase
         $this->dispatch(Module::ROUTE_PREFIX . "/" . $action);
 
         $this->assertResponseStatusCode(200);
-        $this->assertModuleName("IarPortalModule");
-        $this->assertControllerName(PortalController::class);
-        $this->assertControllerClass("PortalController");
+        $this->assertModuleName("AlphaModule");
+        $this->assertControllerName(AlphaController::class);
+        $this->assertControllerClass("AlphaController");
         $this->assertMatchedRouteName(Module::ROUTE_MODULE_CHILD_ACTIONS);
         $this->assertActionName($action);
     }

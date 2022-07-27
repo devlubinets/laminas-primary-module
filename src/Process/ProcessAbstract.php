@@ -1,12 +1,12 @@
 <?php
 
-namespace IarPortalModule\Process;
+namespace AlphaModule\Process;
 
-use IarPortalModule\Request\RequestAbstract;
+use AlphaModule\Request\RequestAbstract;
 
 /**
  * Class ProcessAbstract
- * @package IarPortalModule\Process\ProcessAbstract
+ * @package AlphaModule\Process\ProcessAbstract
  */
 abstract class ProcessAbstract implements ProcessInterface
 {

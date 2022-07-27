@@ -1,15 +1,15 @@
 <?php
 
-namespace IarPortalModule\Controller;
+namespace AlphaModule\Controller;
 
 use Laminas\Mvc\Controller\AbstractActionController;
 use Laminas\View\Model\ViewModel;
 
 /**
- * Class PortalController
- * @package IarPortalModule\Controller\PortalController
+ * Class AlphaController
+ * @package AlphaModule\Controller\AlphaController
  */
-class PortalController extends AbstractActionController
+class AlphaController extends AbstractActionController
 {
     /**
      * @return ViewModel

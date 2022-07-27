@@ -1,30 +1,30 @@
 <?php
 
-namespace IarPortalModule\Process\Factory;
+namespace AlphaModule\Process\Factory;
 
-use IarPortalModule\Process\PortalProcess;
-use IarPortalModule\Repository\PortalRepository;
+use AlphaModule\Process\AlphaProcess;
+use AlphaModule\Repository\AlphaRepository;
 use Interop\Container\ContainerInterface;
 use Laminas\ServiceManager\Factory\FactoryInterface;
 use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\NotFoundExceptionInterface;
 
 /**
- * Class PortalProcessFactory
- * @package IarPortalModule\Process\Factory\PortalProcessFactory
+ * Class AlphaProcessFactory
+ * @package AlphaModule\Process\Factory\AlphaProcessFactory
  */
-class PortalProcessFactory implements FactoryInterface
+class AlphaProcessFactory implements FactoryInterface
 {
     /**
      * @param ContainerInterface $container
      * @param string $requestedName
      * @param array|null $options
-     * @return PortalProcess
+     * @return AlphaProcess
      * @throws ContainerExceptionInterface
      * @throws NotFoundExceptionInterface
      */
     public function __invoke(ContainerInterface $container, $requestedName, ?array $options = null)
     {
-        return new PortalProcess($container->get(PortalRepository::class));
+        return new AlphaProcess($container->get(AlphaRepository::class));
     }
 }
