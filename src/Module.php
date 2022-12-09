@@ -8,8 +8,8 @@ namespace AlphaModule;
  */
 class Module
 {
-    public const VERSION = "0.0.2";
-    public const ALPHA_CONFIG = "alpha-config";
+    public const MODULE_VERSION = "0.1.0";
+    public const MODULE_CONFIG = "alpha-config";
 
     public const ROUTE_PREFIX = "/alpha-module";
 
