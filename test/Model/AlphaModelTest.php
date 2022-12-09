@@ -8,28 +8,37 @@ use AlphaModuleTest\AbstractApplicationTestCase;
 /**  */
 class AlphaModelTest extends AbstractApplicationTestCase
 {
+    /** */
+    public function setUp(): void
+    {
+        parent::setUp();
+
+        $this->container->setAllowOverride(true);
+        // todo: add override mocks here
+        $this->container->setAllowOverride(false);
+    }
+
     /**
      * @dataProvider allIntProperties()
      */
     public function testIntGettersSetters(string $propertyName, int $value)
     {
         $alphaModel = new AlphaModel();
+        $childAlphaModel = new AlphaModel();
+        $childAlphaModel->setAlphaID($value);
         $getter = "get" . $propertyName;
         $setter = "set" . $propertyName;
+        $alphaModel->$setter($value);
+        $values = $alphaModel->exchangeArray();
+        $values["childAlphaModel"] = $childAlphaModel;
+        $alphaModel->exchangeArray($values);
+        // NB: reset values to multidimensional array
+        $values = $alphaModel->exchangeArray();
 
         $this->assertTrue(method_exists($alphaModel, $getter));
         $this->assertTrue(method_exists($alphaModel, $setter));
-
-        $alphaModel->$setter($value);
-
         $this->assertEquals($value, $alphaModel->$getter());
-
-        $values = $alphaModel->exchangeArray();
-
         $this->assertIsArray($values);
-
-        $alphaModel->exchangeArray($values);
-
         $this->assertEquals($values, $alphaModel->getArrayCopy());
     }
 

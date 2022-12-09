@@ -23,12 +23,10 @@ class AlphaProcess extends ProcessAbstract
     public function __construct(AlphaRepository $alphaRepository)
     {
         $this->alphaRepository = $alphaRepository;
-
-        parent::__construct(new AlphaRequest());
     }
 
     /** @inheritdoc */
-    public function execute()
+    public function execute(): array
     {
         // todo: do process action, call API, or gather data
 

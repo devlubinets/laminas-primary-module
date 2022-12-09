@@ -22,10 +22,14 @@ class AbstractApplicationTestCase extends AbstractHttpControllerTestCase
     /**  */
     public function setUp(): void
     {
+        $moduleConfig = include __DIR__ . "/../config/module.config.php";
+        $moduleConfig["view_manager"]["template_map"]["layout/layout"] =
+            __DIR__ . "/../view/lender-form/layout.phtml";
+
         $this->setApplicationConfig(
             ArrayUtils::merge(
                 include __DIR__ . "/_fixtures/config/application.config.php",
-                include __DIR__ . "/../config/module.config.php"
+                $moduleConfig
             )
         );
 

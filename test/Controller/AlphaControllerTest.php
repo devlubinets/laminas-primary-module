@@ -4,30 +4,21 @@ namespace AlphaModuleTest\Controller;
 
 use AlphaModule\Controller\AlphaController;
 use AlphaModule\Module;
+use AlphaModuleTest\AbstractApplicationTestCase;
 use Exception;
 use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 
 /** */
-class AlphaControllerTest extends AbstractHttpControllerTestCase
+class AlphaControllerTest extends AbstractApplicationTestCase
 {
-    /**  */
+    /** */
     public function setUp(): void
     {
-        $this->setApplicationConfig(
-            [
-                "modules" => [
-                    "Laminas\Router",
-                    "AlphaModule",
-                ],
-                "module_listener_options" => [
-                    "use_laminas_loader" => false,
-                    "config_cache_enabled" => false,
-                    "config_cache_key" => "application.config.cache",
-                    "module_map_cache_enabled" => false,
-                    "module_map_cache_key" => "application.module.cache",
-                ],
-            ]
-        );
+        parent::setUp();
+
+        $this->container->setAllowOverride(true);
+        // todo: add override mocks here
+        $this->container->setAllowOverride(false);
     }
 
     /**

@@ -13,12 +13,6 @@ abstract class ProcessAbstract implements ProcessInterface
     /** @var RequestAbstract $request */
     protected RequestAbstract $request;
 
-    /** */
-    public function __construct(RequestAbstract $request)
-    {
-        $this->request = $request;
-    }
-
     /** @inheritdoc */
     abstract public function execute();
 

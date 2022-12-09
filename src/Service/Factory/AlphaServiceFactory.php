@@ -26,6 +26,9 @@ class AlphaServiceFactory implements FactoryInterface
      */
     public function __invoke(ContainerInterface $container, $requestedName, ?array $options = null): AlphaService
     {
-        return new AlphaService(new Config($container->get("config")), $container->get(AlphaProcess::class));
+        return new AlphaService(
+            new Config($container->get("config")),
+            $container->get(AlphaProcess::class)
+        );
     }
 }

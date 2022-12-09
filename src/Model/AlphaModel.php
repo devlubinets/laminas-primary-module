@@ -11,6 +11,28 @@ class AlphaModel extends ModelAbstract
     /** @var int $alphaID */
     protected int $alphaID;
 
+    /** @var AlphaModel|null $childAlphaModel */
+    protected ?AlphaModel $childAlphaModel = null;
+
+    /**
+     * @return AlphaModel|null
+     */
+    public function getChildAlphaModel(): ?AlphaModel
+    {
+        return $this->childAlphaModel;
+    }
+
+    /**
+     * @param AlphaModel $childAlphaModel
+     * @return AlphaModel|null
+     */
+    public function setChildAlphaModel(AlphaModel $childAlphaModel): ?AlphaModel
+    {
+        $this->childAlphaModel = $childAlphaModel;
+
+        return $this;
+    }
+
     /**
      * @return int
      */

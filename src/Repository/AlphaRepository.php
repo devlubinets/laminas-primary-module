@@ -24,7 +24,7 @@ class AlphaRepository
         $alphaModel = new AlphaModel();
         $alphaModel->exchangeArray(
             [
-                "id" => $id,
+                "alphaID" => $id,
             ]
         );
 

@@ -23,7 +23,7 @@ class AlphaProcessFactory implements FactoryInterface
      * @throws ContainerExceptionInterface
      * @throws NotFoundExceptionInterface
      */
-    public function __invoke(ContainerInterface $container, $requestedName, ?array $options = null)
+    public function __invoke(ContainerInterface $container, $requestedName, ?array $options = null): AlphaProcess
     {
         return new AlphaProcess($container->get(AlphaRepository::class));
     }

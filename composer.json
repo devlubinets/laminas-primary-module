@@ -1,13 +1,13 @@
 {
-  "name": "iss-module/alpha-module",
+  "name": "iss-module/lender-form",
   "require": {
     "php": ">=7.4",
-    "laminas/laminas-mvc": "^3.1",
-    "ext-json": "*"
+    "ext-json": "^7.4",
+    "laminas/laminas-mvc": "^3.3.3"
   },
   "require-dev": {
     "phpunit/phpunit": "^9.5",
-    "laminas/laminas-test": "^3.5"
+    "laminas/laminas-test": "^3.8"
   },
   "autoload": {
     "psr-4": {

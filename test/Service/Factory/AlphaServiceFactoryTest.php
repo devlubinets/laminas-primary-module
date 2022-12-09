@@ -1,6 +1,6 @@
 <?php
 
-namespace AlphaModuleTest\Service;
+namespace AlphaModuleTest\Service\Factory;
 
 use AlphaModule\Process\AlphaProcess;
 use AlphaModule\Service\AlphaService;
@@ -11,7 +11,7 @@ use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\NotFoundExceptionInterface;
 
 /**  */
-class AlphaServiceTest extends AbstractApplicationTestCase
+class AlphaServiceFactoryTest extends AbstractApplicationTestCase
 {
     /** @var MockObject $alphaProcessMock */
     protected MockObject $alphaProcessMock;
@@ -34,31 +34,10 @@ class AlphaServiceTest extends AbstractApplicationTestCase
      * @throws ContainerExceptionInterface
      * @throws NotFoundExceptionInterface
      */
-    public function testSetGetAlphaProcess()
+    public function testServiceCanBeCreatedByFactory()
     {
-        /** @var AlphaService $alphaService */
         $alphaService = $this->container->get(AlphaService::class);
 
-        $this->assertInstanceOf(get_class($this->alphaProcessMock), $alphaService->getAlphaProcess());
-
-        $alphaService->setAlphaProcess($this->alphaProcessMock);
-
-        $this->assertInstanceOf(get_class($this->alphaProcessMock), $alphaService->getAlphaProcess());
-    }
-
-    /**
-     * @throws ContainerExceptionInterface
-     * @throws NotFoundExceptionInterface
-     */
-    public function testGetAlpha()
-    {
-        $testID = 123;
-
-        /** @var AlphaService $alphaService */
-        $alphaService = $this->container->get(AlphaService::class);
-        $jsonView = $alphaService->getAlpha($testID);
-
-        $this->assertInstanceOf(JsonModel::class, $jsonView);
-        $this->assertEquals($testID, $jsonView->getVariable("id"));
+        $this->assertInstanceOf(AlphaService::class, $alphaService);
     }
 }

@@ -4,6 +4,7 @@ return [
     "modules" => [
         "Laminas\ZendFrameworkBridge",
         "Laminas\Router",
+        "AlphaModule",
     ],
     "module_listener_options" => [
         "module_paths" => [
@@ -17,5 +18,8 @@ return [
 
         "config_cache_enabled" => false,
         "module_map_cache_enabled" => false,
+        "use_laminas_loader" => false,
+        "config_cache_key" => "application.config.cache",
+        "module_map_cache_key" => "application.module.cache",
     ],
 ];
