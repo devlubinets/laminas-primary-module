@@ -24,7 +24,7 @@ class AbstractApplicationTestCase extends AbstractHttpControllerTestCase
     {
         $moduleConfig = include __DIR__ . "/../config/module.config.php";
         $moduleConfig["view_manager"]["template_map"]["layout/layout"] =
-            __DIR__ . "/../view/lender-form/layout.phtml";
+            __DIR__ . "/../view/alpha-module/layout.phtml";
 
         $this->setApplicationConfig(
             ArrayUtils::merge(

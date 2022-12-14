@@ -1,5 +1,5 @@
 {
-  "name": "iss-module/lender-form",
+  "name": "iss-module/alpha-module",
   "require": {
     "php": ">=7.4",
     "ext-json": "^7.4",
