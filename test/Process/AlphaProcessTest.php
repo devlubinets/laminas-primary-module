@@ -70,9 +70,13 @@ class AlphaProcessTest extends AbstractApplicationTestCase
         /** @var AlphaProcess $alphaProcess */
         $alphaProcess = $this->container->get(AlphaProcess::class);
 
-        $this->assertIsArray($alphaProcess->execute());
+        $this->assertIsObject($alphaProcess->execute());
     }
 
+    /**
+     * @throws ContainerExceptionInterface
+     * @throws NotFoundExceptionInterface
+     */
     public function testGetSetRequest()
     {
         $requestMock = $this->getMockBuilder(AlphaRequest::class)
