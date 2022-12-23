@@ -16,10 +16,8 @@ abstract class ProcessAbstract implements ProcessInterface
      */
     protected RequestAbstract $request;
 
-    /**
-     * @inheritdoc
-     */
-    abstract public function execute();
+    /** @inheritdoc */
+    abstract public function execute(): object;
 
     /**
      * @return RequestAbstract
@@ -30,12 +28,13 @@ abstract class ProcessAbstract implements ProcessInterface
     }
 
     /**
-     * @param  RequestAbstract $request
+     * @param RequestAbstract $request
      * @return ProcessAbstract
      */
     public function setRequest(RequestAbstract $request): ProcessAbstract
     {
         $this->request = $request;
+
         return $this;
     }
 }

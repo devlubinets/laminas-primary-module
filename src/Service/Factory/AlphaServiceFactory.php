@@ -18,9 +18,9 @@ use Psr\Container\NotFoundExceptionInterface;
 class AlphaServiceFactory implements FactoryInterface
 {
     /**
-     * @param  ContainerInterface $container
-     * @param  string             $requestedName
-     * @param  array|null         $options
+     * @param ContainerInterface $container
+     * @param string $requestedName
+     * @param array<string, string>|null $options
      * @return AlphaService
      * @throws ContainerExceptionInterface
      * @throws NotFoundExceptionInterface

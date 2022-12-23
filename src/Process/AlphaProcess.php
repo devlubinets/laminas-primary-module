@@ -3,7 +3,6 @@
 namespace AlphaModule\Process;
 
 use AlphaModule\Repository\AlphaRepository;
-use AlphaModule\Request\AlphaRequest;
 
 /**
  * Class AlphaProcess
@@ -30,14 +29,12 @@ class AlphaProcess extends ProcessAbstract
         $this->alphaRepository = $alphaRepository;
     }
 
-    /**
-     * @inheritdoc
-     */
-    public function execute(): array
+    /** @inheritdoc */
+    public function execute(): object
     {
         // todo: do process action, call API, or gather data
 
-        return []; // todo: return a useful Model
+        return new \stdClass(); // todo: return a useful Model
     }
 
     /**
@@ -49,7 +46,7 @@ class AlphaProcess extends ProcessAbstract
     }
 
     /**
-     * @param  AlphaRepository $alphaRepository
+     * @param AlphaRepository $alphaRepository
      * @return AlphaProcess
      */
     public function setAlphaRepository(AlphaRepository $alphaRepository): AlphaProcess
@@ -68,7 +65,7 @@ class AlphaProcess extends ProcessAbstract
     }
 
     /**
-     * @param  int $recordID
+     * @param int $recordID
      * @return AlphaProcess
      */
     public function setRecordID(int $recordID): AlphaProcess

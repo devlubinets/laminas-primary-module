@@ -13,9 +13,9 @@ use Laminas\ServiceManager\Factory\FactoryInterface;
 class AlphaControllerFactory implements FactoryInterface
 {
     /**
-     * @param  ContainerInterface $container
-     * @param  $requestedName
-     * @param  array|null         $options
+     * @param ContainerInterface $container
+     * @param $requestedName
+     * @param array<string, string>|null $options
      * @return mixed
      */
     public function __invoke(ContainerInterface $container, $requestedName, ?array $options = null)

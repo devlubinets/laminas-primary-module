@@ -38,4 +38,5 @@ class AbstractApplicationTestCase extends AbstractHttpControllerTestCase
         $this->mvcApp = $this->getApplication();
         $this->container = $this->mvcApp->getServiceManager();
     }
+
 }

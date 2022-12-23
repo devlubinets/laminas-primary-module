@@ -10,8 +10,8 @@ namespace AlphaModule\Model;
 interface ModelInterface
 {
     /**
-     * @param  array $properties
-     * @return ModelInterface|array
+     * @param array<string, int|object|string> $properties
+     * @return ModelInterface|array<string, int|object|string>
      */
     public function exchangeArray(array $properties = []);
 }

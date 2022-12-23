@@ -9,6 +9,6 @@ namespace AlphaModule\Process;
  */
 interface ProcessInterface
 {
-    /** */
-    public function execute();
+    /** @return object */
+    public function execute(): object;
 }

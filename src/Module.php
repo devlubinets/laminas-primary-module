@@ -19,7 +19,7 @@ class Module
     public const ROUTE_MODULE_CHILD_ACTIONS = "alpha-module/actions";
 
     /**
-     * @return array
+     * @return array<string, string>
      */
     public function getConfig(): array
     {

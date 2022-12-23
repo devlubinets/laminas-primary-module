@@ -19,7 +19,7 @@ abstract class ModelAbstract implements ModelInterface
     /**
      * Alias for use with Zend Hydrator
      *
-     * @return array|ModelInterface
+     * @return array<string, string|object>|ModelInterface
      */
     public function getArrayCopy()
     {
