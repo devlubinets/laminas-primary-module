@@ -13,12 +13,12 @@ use AlphaModule\Request\AlphaRequest;
 class AlphaProcess extends ProcessAbstract
 {
     /**
-     * @var AlphaRepository $alphaRepository 
+     * @var AlphaRepository $alphaRepository
      */
     protected AlphaRepository $alphaRepository;
 
     /**
-     * @var int $recordID 
+     * @var int $recordID
      */
     protected int $recordID;
 
@@ -31,7 +31,7 @@ class AlphaProcess extends ProcessAbstract
     }
 
     /**
-     * @inheritdoc 
+     * @inheritdoc
      */
     public function execute(): array
     {

@@ -12,12 +12,12 @@ use AlphaModule\Request\RequestAbstract;
 abstract class ProcessAbstract implements ProcessInterface
 {
     /**
-     * @var RequestAbstract $request 
+     * @var RequestAbstract $request
      */
     protected RequestAbstract $request;
 
     /**
-     * @inheritdoc 
+     * @inheritdoc
      */
     abstract public function execute();
 

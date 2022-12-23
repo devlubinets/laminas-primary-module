@@ -14,12 +14,12 @@ use Laminas\View\Model\JsonModel;
 class AlphaService
 {
     /**
-     * @var AlphaProcess $alphaProcess 
+     * @var AlphaProcess $alphaProcess
      */
     protected AlphaProcess $alphaProcess;
 
     /**
-     * @var Config $config 
+     * @var Config $config
      */
     protected Config $config;
 

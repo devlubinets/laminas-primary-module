@@ -27,7 +27,7 @@ abstract class ModelAbstract implements ModelInterface
     }
 
     /**
-     * @inheritDoc 
+     * @inheritDoc
      */
     public function exchangeArray(array $properties = [])
     {

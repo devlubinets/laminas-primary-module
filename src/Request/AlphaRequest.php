@@ -13,7 +13,7 @@ use AlphaModule\Response\ResponseAbstract;
 class AlphaRequest extends RequestAbstract
 {
     /**
-     * @inheritdoc 
+     * @inheritdoc
      */
     public function send(): ResponseAbstract
     {

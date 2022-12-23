@@ -10,7 +10,7 @@ namespace AlphaModule\Response;
 abstract class ResponseAbstract implements ResponseInterface
 {
     /**
-     * @inheritdoc 
+     * @inheritdoc
      */
     abstract public function populate(): bool;
 }

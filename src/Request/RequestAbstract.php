@@ -12,7 +12,7 @@ use AlphaModule\Response\ResponseAbstract;
 abstract class RequestAbstract implements RequestInterface
 {
     /**
-     * @inheritdoc 
+     * @inheritdoc
      */
     abstract public function send(): ResponseAbstract;
 }

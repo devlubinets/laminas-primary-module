@@ -10,7 +10,7 @@ namespace AlphaModule\Response;
 class AlphaResponse extends ResponseAbstract
 {
     /**
-     * @inheritdoc 
+     * @inheritdoc
      */
     public function populate(): bool
     {

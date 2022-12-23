@@ -16,6 +16,6 @@ class RepositoryFactory implements FactoryInterface
      */
     public function __invoke(ContainerInterface $container, $requestedName, ?array $options = null)
     {
-        return new $requestedName;
+        return new $requestedName();
     }
 }

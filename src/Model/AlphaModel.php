@@ -10,12 +10,12 @@ namespace AlphaModule\Model;
 class AlphaModel extends ModelAbstract
 {
     /**
-     * @var int $alphaID 
+     * @var int $alphaID
      */
     protected int $alphaID;
 
     /**
-     * @var AlphaModel|null $childAlphaModel 
+     * @var AlphaModel|null $childAlphaModel
      */
     protected ?AlphaModel $childAlphaModel = null;
 
