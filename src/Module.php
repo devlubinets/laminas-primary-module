@@ -4,6 +4,7 @@ namespace AlphaModule;
 
 /**
  * Class Module
+ *
  * @package AlphaModule
  */
 class Module

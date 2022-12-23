@@ -6,6 +6,7 @@ use AlphaModule\Response\ResponseAbstract;
 
 /**
  * Class RequestInterface
+ *
  * @package AlphaModule\Request\RequestInterface
  */
 interface RequestInterface

@@ -6,10 +6,13 @@ use AlphaModule\Response\ResponseAbstract;
 
 /**
  * Class RequestAbstract
+ *
  * @package AlphaModule\Request\RequestAbstract
  */
 abstract class RequestAbstract implements RequestInterface
 {
-    /** @inheritdoc */
+    /**
+     * @inheritdoc 
+     */
     abstract public function send(): ResponseAbstract;
 }

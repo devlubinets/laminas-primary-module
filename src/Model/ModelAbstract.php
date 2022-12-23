@@ -6,6 +6,7 @@ use ReflectionClass;
 
 /**
  * Class ModelAbstract
+ *
  * @package AlphaModule\ModelAbstract
  */
 abstract class ModelAbstract implements ModelInterface
@@ -25,7 +26,9 @@ abstract class ModelAbstract implements ModelInterface
         return $this->exchangeArray();
     }
 
-    /** @inheritDoc */
+    /**
+     * @inheritDoc 
+     */
     public function exchangeArray(array $properties = [])
     {
         $reflectModel = new ReflectionClass(get_class($this));

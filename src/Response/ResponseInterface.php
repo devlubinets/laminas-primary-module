@@ -4,6 +4,7 @@ namespace AlphaModule\Response;
 
 /**
  * Class ResponseInterface
+ *
  * @package AlphaModule\Response\ResponseInterface
  */
 interface ResponseInterface

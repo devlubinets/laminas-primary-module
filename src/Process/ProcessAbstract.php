@@ -6,14 +6,19 @@ use AlphaModule\Request\RequestAbstract;
 
 /**
  * Class ProcessAbstract
+ *
  * @package AlphaModule\Process\ProcessAbstract
  */
 abstract class ProcessAbstract implements ProcessInterface
 {
-    /** @var RequestAbstract $request */
+    /**
+     * @var RequestAbstract $request 
+     */
     protected RequestAbstract $request;
 
-    /** @inheritdoc */
+    /**
+     * @inheritdoc 
+     */
     abstract public function execute();
 
     /**
@@ -25,7 +30,7 @@ abstract class ProcessAbstract implements ProcessInterface
     }
 
     /**
-     * @param RequestAbstract $request
+     * @param  RequestAbstract $request
      * @return ProcessAbstract
      */
     public function setRequest(RequestAbstract $request): ProcessAbstract

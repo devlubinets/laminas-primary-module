@@ -4,10 +4,13 @@ namespace AlphaModule\Response;
 
 /**
  * Class ResponseAbstract
+ *
  * @package AlphaModule\Response\ResponseAbstract
  */
 abstract class ResponseAbstract implements ResponseInterface
 {
-    /** @inheritdoc */
+    /**
+     * @inheritdoc 
+     */
     abstract public function populate(): bool;
 }

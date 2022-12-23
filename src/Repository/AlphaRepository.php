@@ -14,7 +14,7 @@ class AlphaRepository
     }
 
     /**
-     * @param int $id
+     * @param  int $id
      * @return AlphaModel
      */
     public function findAlphaByID(int $id): AlphaModel

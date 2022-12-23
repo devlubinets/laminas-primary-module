@@ -4,14 +4,19 @@ namespace AlphaModule\Model;
 
 /**
  * Class AlphaModel
+ *
  * @package AlphaModule\AlphaModel
  */
 class AlphaModel extends ModelAbstract
 {
-    /** @var int $alphaID */
+    /**
+     * @var int $alphaID 
+     */
     protected int $alphaID;
 
-    /** @var AlphaModel|null $childAlphaModel */
+    /**
+     * @var AlphaModel|null $childAlphaModel 
+     */
     protected ?AlphaModel $childAlphaModel = null;
 
     /**
@@ -23,7 +28,7 @@ class AlphaModel extends ModelAbstract
     }
 
     /**
-     * @param AlphaModel $childAlphaModel
+     * @param  AlphaModel $childAlphaModel
      * @return AlphaModel|null
      */
     public function setChildAlphaModel(AlphaModel $childAlphaModel): ?AlphaModel
@@ -42,7 +47,7 @@ class AlphaModel extends ModelAbstract
     }
 
     /**
-     * @param int $alphaID
+     * @param  int $alphaID
      * @return AlphaModel
      */
     public function setAlphaID(int $alphaID): AlphaModel

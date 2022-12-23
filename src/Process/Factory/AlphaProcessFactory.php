@@ -11,14 +11,15 @@ use Psr\Container\NotFoundExceptionInterface;
 
 /**
  * Class AlphaProcessFactory
+ *
  * @package AlphaModule\Process\Factory\AlphaProcessFactory
  */
 class AlphaProcessFactory implements FactoryInterface
 {
     /**
-     * @param ContainerInterface $container
-     * @param string $requestedName
-     * @param array|null $options
+     * @param  ContainerInterface $container
+     * @param  string             $requestedName
+     * @param  array|null         $options
      * @return AlphaProcess
      * @throws ContainerExceptionInterface
      * @throws NotFoundExceptionInterface

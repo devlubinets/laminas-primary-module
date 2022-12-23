@@ -7,14 +7,19 @@ use AlphaModule\Request\AlphaRequest;
 
 /**
  * Class AlphaProcess
+ *
  * @package AlphaModule\AlphaProcess
  */
 class AlphaProcess extends ProcessAbstract
 {
-    /** @var AlphaRepository $alphaRepository */
+    /**
+     * @var AlphaRepository $alphaRepository 
+     */
     protected AlphaRepository $alphaRepository;
 
-    /** @var int $recordID */
+    /**
+     * @var int $recordID 
+     */
     protected int $recordID;
 
     /**
@@ -25,7 +30,9 @@ class AlphaProcess extends ProcessAbstract
         $this->alphaRepository = $alphaRepository;
     }
 
-    /** @inheritdoc */
+    /**
+     * @inheritdoc 
+     */
     public function execute(): array
     {
         // todo: do process action, call API, or gather data
@@ -42,7 +49,7 @@ class AlphaProcess extends ProcessAbstract
     }
 
     /**
-     * @param AlphaRepository $alphaRepository
+     * @param  AlphaRepository $alphaRepository
      * @return AlphaProcess
      */
     public function setAlphaRepository(AlphaRepository $alphaRepository): AlphaProcess
@@ -61,7 +68,7 @@ class AlphaProcess extends ProcessAbstract
     }
 
     /**
-     * @param int $recordID
+     * @param  int $recordID
      * @return AlphaProcess
      */
     public function setRecordID(int $recordID): AlphaProcess

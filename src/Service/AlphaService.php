@@ -8,18 +8,23 @@ use Laminas\View\Model\JsonModel;
 
 /**
  * Class AlphaService
+ *
  * @package AlphaModule\Service\AlphaService
  */
 class AlphaService
 {
-    /** @var AlphaProcess $alphaProcess */
+    /**
+     * @var AlphaProcess $alphaProcess 
+     */
     protected AlphaProcess $alphaProcess;
 
-    /** @var Config $config */
+    /**
+     * @var Config $config 
+     */
     protected Config $config;
 
     /**
-     * @param Config $config
+     * @param Config       $config
      * @param AlphaProcess $alphaProcess
      */
     public function __construct(Config $config, AlphaProcess $alphaProcess)
@@ -29,7 +34,7 @@ class AlphaService
     }
 
     /**
-     * @param int $id
+     * @param  int $id
      * @return JsonModel
      */
     public function getAlpha(int $id): JsonModel
@@ -54,7 +59,7 @@ class AlphaService
     }
 
     /**
-     * @param AlphaProcess $alphaProcess
+     * @param  AlphaProcess $alphaProcess
      * @return AlphaService
      */
     public function setAlphaProcess(AlphaProcess $alphaProcess): AlphaService
