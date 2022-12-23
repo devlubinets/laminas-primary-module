@@ -11,14 +11,10 @@ use AlphaModule\Repository\AlphaRepository;
  */
 class AlphaProcess extends ProcessAbstract
 {
-    /**
-     * @var AlphaRepository $alphaRepository
-     */
+    /** @var AlphaRepository $alphaRepository */
     protected AlphaRepository $alphaRepository;
 
-    /**
-     * @var int $recordID
-     */
+    /** @var int $recordID */
     protected int $recordID;
 
     /**

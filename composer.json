@@ -30,9 +30,9 @@
     "cover": "vendor/bin/phpunit --coverage-html .coverage",
     "cs": "vendor/bin/phpcs --standard=PSR12 --report=summary -p ./src",
     "csfix": "vendor/bin/phpcbf --standard=PSR12 ./src",
-    "stan": "vendor/bin/phpstan analyse -l 6 src",
+    "stan": "vendor/bin/phpstan analyse --level max src",
     "test": "vendor/bin/phpunit --no-coverage",
-    "teststan": "vendor/bin/phpstan analyse -l 1 test"
+    "teststan": "vendor/bin/phpstan analyse -level 1 test"
   },
   "config": {
     "sort-packages": true
