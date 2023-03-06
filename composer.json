@@ -30,7 +30,14 @@
     "cover": "vendor/bin/phpunit --coverage-html .coverage",
     "cs": "vendor/bin/phpcs --standard=PSR12 --report=summary -p ./src",
     "csfix": "vendor/bin/phpcbf --standard=PSR12 ./src",
+    "sink": [
+      "vendor/bin/phpcs --standard=PSR12 --report=summary -p ./src",
+      "vendor/bin/phpstan analyse --xdebug --level max src",
+      "vendor/bin/phpstan analyse --xdebug --level 1 test",
+      "vendor/bin/phpunit --no-coverage"
+    ],
     "stan": "vendor/bin/phpstan analyse --level max src",
+    "stanx": "vendor/bin/phpstan analyse --xdebug --level max src",
     "test": "vendor/bin/phpunit --no-coverage",
     "teststan": "vendor/bin/phpstan analyse -level 1 test"
   },
