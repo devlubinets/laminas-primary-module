@@ -1,5 +1,5 @@
 {
-  "name": "iss-module/primary-module",
+  "name": "primary-module",
   "require": {
     "php": ">=7.4",
     "ext-json": "^7.4",
