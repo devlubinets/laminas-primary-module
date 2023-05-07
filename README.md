@@ -21,14 +21,14 @@ Once composer is installed, execute the following command in your project root t
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@bitbucket.org:iss-module/primary.git"
+            "url": "git@github.com:devlubinets/laminas-primary-module.git"
         }
     ],
     "require": {   
         ...,
         ...,
         ...,     
-        "iss-module/primary": "dev-develop",
+        "iss-module/module-name": "dev-develop",
     },
 ```
 
@@ -36,9 +36,9 @@ Once composer is installed, execute the following command in your project root t
 {SETUP INSTRUCTION}
 
 ## Common
-### ISS module
+### Module
 
-That module created based on the ISS module [Primary module](https://bitbucket.org/iss-module/primary/src/alpha/) and module's init branch pushed to alpha [Alpha module repo](https://bitbucket.org/iss-module/alpha/src/alpha/).
+That module created based on the primary module [Primary module](https://github.com/devlubinets/laminas-primary-module) and module's init branch pushed to alpha [Primary module repo](https://github.com/devlubinets/laminas-primary-module).
 
 ### Links
 
