@@ -5,7 +5,11 @@ namespace PrimaryModule\Repository\Factory;
 use Interop\Container\ContainerInterface;
 use Laminas\ServiceManager\Factory\FactoryInterface;
 
-/**  */
+/**
+ * Class RepositoryFactory
+ *
+ * @package PrimaryModule\Repository\Factory\RepositoryFactory
+ */
 class RepositoryFactory implements FactoryInterface
 {
     /**

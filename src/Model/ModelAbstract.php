@@ -7,7 +7,7 @@ use ReflectionClass;
 /**
  * Class ModelAbstract
  *
- * @package PrimaryModule\ModelAbstract
+ * @package PrimaryModule\Model\ModelAbstract
  */
 abstract class ModelAbstract implements ModelInterface
 {
