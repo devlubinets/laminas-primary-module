@@ -1,6 +1,6 @@
 <?php
 
-namespace AlphaModule\Repository\Factory;
+namespace PrimaryModule\Repository\Factory;
 
 use Interop\Container\ContainerInterface;
 use Laminas\ServiceManager\Factory\FactoryInterface;

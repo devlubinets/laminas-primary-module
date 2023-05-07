@@ -1,13 +1,13 @@
 <?php
 
-namespace AlphaModule\Model;
+namespace PrimaryModule\Model;
 
 use ReflectionClass;
 
 /**
  * Class ModelAbstract
  *
- * @package AlphaModule\ModelAbstract
+ * @package PrimaryModule\ModelAbstract
  */
 abstract class ModelAbstract implements ModelInterface
 {

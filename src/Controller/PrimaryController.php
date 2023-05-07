@@ -1,16 +1,16 @@
 <?php
 
-namespace AlphaModule\Controller;
+namespace PrimaryModule\Controller;
 
 use Laminas\Mvc\Controller\AbstractActionController;
 use Laminas\View\Model\ViewModel;
 
 /**
- * Class AlphaController
+ * Class PrimaryController
  *
- * @package AlphaModule\Controller\AlphaController
+ * @package PrimaryModule\Controller\PrimaryController
  */
-class AlphaController extends AbstractActionController
+class PrimaryController extends AbstractActionController
 {
     /**
      * @return ViewModel

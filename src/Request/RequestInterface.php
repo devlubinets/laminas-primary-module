@@ -1,13 +1,13 @@
 <?php
 
-namespace AlphaModule\Request;
+namespace PrimaryModule\Request;
 
-use AlphaModule\Response\ResponseAbstract;
+use PrimaryModule\Response\ResponseAbstract;
 
 /**
  * Class RequestInterface
  *
- * @package AlphaModule\Request\RequestInterface
+ * @package PrimaryModule\Request\RequestInterface
  */
 interface RequestInterface
 {

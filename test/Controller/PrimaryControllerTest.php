@@ -1,15 +1,15 @@
 <?php
 
-namespace AlphaModuleTest\Controller;
+namespace PrimaryModuleTest\Controller;
 
-use AlphaModule\Controller\AlphaController;
-use AlphaModule\Module;
-use AlphaModuleTest\AbstractApplicationTestCase;
+use PrimaryModule\Controller\PrimaryController;
+use PrimaryModule\Module;
+use PrimaryModuleTest\AbstractApplicationTestCase;
 use Exception;
 use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 
 /** */
-class AlphaControllerTest extends AbstractApplicationTestCase
+class PrimaryControllerTest extends AbstractApplicationTestCase
 {
     /** */
     public function setUp(): void
@@ -29,10 +29,10 @@ class AlphaControllerTest extends AbstractApplicationTestCase
         $this->dispatch(Module::ROUTE_PREFIX);
 
         $this->assertResponseStatusCode(200);
-        $this->assertModuleName("AlphaModule");
-        $this->assertControllerName(AlphaController::class);
-        $this->assertControllerClass("AlphaController");
-        $this->assertMatchedRouteName("alpha-module");
+        $this->assertModuleName("PrimaryModule");
+        $this->assertControllerName(PrimaryController::class);
+        $this->assertControllerClass("PrimaryController");
+        $this->assertMatchedRouteName("primary-module");
         $this->assertActionName("index");
     }
 
@@ -46,9 +46,9 @@ class AlphaControllerTest extends AbstractApplicationTestCase
         $this->dispatch(Module::ROUTE_PREFIX . "/" . $action);
 
         $this->assertResponseStatusCode(200);
-        $this->assertModuleName("AlphaModule");
-        $this->assertControllerName(AlphaController::class);
-        $this->assertControllerClass("AlphaController");
+        $this->assertModuleName("PrimaryModule");
+        $this->assertControllerName(PrimaryController::class);
+        $this->assertControllerClass("PrimaryController");
         $this->assertMatchedRouteName(Module::ROUTE_MODULE_CHILD_ACTIONS);
         $this->assertActionName($action);
     }

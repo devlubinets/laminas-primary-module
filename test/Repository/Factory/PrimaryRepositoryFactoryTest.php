@@ -1,15 +1,15 @@
 <?php
 
-namespace AlphaModuleTest\Repository\Factory;
+namespace PrimaryModuleTest\Repository\Factory;
 
-use AlphaModule\Model\AlphaModel;
-use AlphaModule\Repository\AlphaRepository;
-use AlphaModuleTest\AbstractApplicationTestCase;
+use PrimaryModule\Model\PrimaryModel;
+use PrimaryModule\Repository\PrimaryRepository;
+use PrimaryModuleTest\AbstractApplicationTestCase;
 use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\NotFoundExceptionInterface;
 
 /**  */
-class AlphaRepositoryFactoryTest extends AbstractApplicationTestCase
+class PrimaryRepositoryFactoryTest extends AbstractApplicationTestCase
 {
     /** */
     public function setUp(): void
@@ -28,8 +28,8 @@ class AlphaRepositoryFactoryTest extends AbstractApplicationTestCase
     public function testFactoryCreatesProcess()
     {
         $this->assertInstanceOf(
-            AlphaRepository::class,
-            $this->container->get("ServiceManager")->get(AlphaRepository::class)
+            PrimaryRepository::class,
+            $this->container->get("ServiceManager")->get(PrimaryRepository::class)
         );
     }
 }

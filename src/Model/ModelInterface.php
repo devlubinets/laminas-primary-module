@@ -1,11 +1,11 @@
 <?php
 
-namespace AlphaModule\Model;
+namespace PrimaryModule\Model;
 
 /**
  * Class ModelInterface
  *
- * @package AlphaModule\Model\ModelInterface
+ * @package PrimaryModule\Model\ModelInterface
  */
 interface ModelInterface
 {

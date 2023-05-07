@@ -1,11 +1,11 @@
 <?php
 
-namespace AlphaModule\Response;
+namespace PrimaryModule\Response;
 
 /**
  * Class ResponseInterface
  *
- * @package AlphaModule\Response\ResponseInterface
+ * @package PrimaryModule\Response\ResponseInterface
  */
 interface ResponseInterface
 {

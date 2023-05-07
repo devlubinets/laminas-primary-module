@@ -1,5 +1,5 @@
 {
-  "name": "iss-module/alpha-module",
+  "name": "iss-module/primary-module",
   "require": {
     "php": ">=7.4",
     "ext-json": "^7.4",
@@ -13,17 +13,17 @@
   },
   "autoload": {
     "psr-4": {
-      "AlphaModule\\": "src/"
+      "PrimaryModule\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "AlphaModuleTest\\": "test/"
+      "PrimaryModuleTest\\": "test/"
     }
   },
   "extra": {
     "laminas": {
-      "component": "AlphaModule"
+      "component": "PrimaryModule"
     }
   },
   "scripts": {

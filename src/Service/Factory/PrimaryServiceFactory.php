@@ -1,9 +1,9 @@
 <?php
 
-namespace AlphaModule\Service\Factory;
+namespace PrimaryModule\Service\Factory;
 
-use AlphaModule\Process\AlphaProcess;
-use AlphaModule\Service\AlphaService;
+use PrimaryModule\Process\PrimaryProcess;
+use PrimaryModule\Service\PrimaryService;
 use Interop\Container\ContainerInterface;
 use Laminas\Config\Config;
 use Laminas\ServiceManager\Factory\FactoryInterface;
@@ -11,31 +11,31 @@ use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\NotFoundExceptionInterface;
 
 /**
- * Class AlphaServiceFactory
+ * Class PrimaryServiceFactory
  *
- * @package AlphaModule\Service\Factory\AlphaServiceFactory
+ * @package PrimaryModule\Service\Factory\PrimaryServiceFactory
  */
-class AlphaServiceFactory implements FactoryInterface
+class PrimaryServiceFactory implements FactoryInterface
 {
     /**
      * @param ContainerInterface $container
      * @param string $requestedName
      * @param array<string, string>|null $options
-     * @return AlphaService
+     * @return PrimaryService
      * @throws ContainerExceptionInterface
      * @throws NotFoundExceptionInterface
      */
-    public function __invoke(ContainerInterface $container, $requestedName, ?array $options = null): AlphaService
+    public function __invoke(ContainerInterface $container, $requestedName, ?array $options = null): PrimaryService
     {
-        /** @var AlphaProcess $alphaProcess */
-        $alphaProcess = $container->get(AlphaProcess::class);
+        /** @var PrimaryProcess $primaryProcess */
+        $primaryProcess = $container->get(PrimaryProcess::class);
 
         /** @var array<string, int|Config|string> $config */
         $config = $container->get("config");
 
-        return new AlphaService(
+        return new PrimaryService(
             new Config($config),
-            $alphaProcess
+            $primaryProcess
         );
     }
 }
