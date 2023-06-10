@@ -1,5 +1,5 @@
 {
-  "name": "primary-module",
+  "name": "project-name/primary-module",
   "require": {
     "php": ">=7.4",
     "ext-json": "^7.4",
