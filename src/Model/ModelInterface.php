@@ -1,11 +1,11 @@
 <?php
 
-namespace PrimaryModule\Model;
+namespace OrmModule\Model;
 
 /**
  * Class ModelInterface
  *
- * @package PrimaryModule\Model\ModelInterface
+ * @package OrmModule\Model\ModelInterface
  */
 interface ModelInterface
 {

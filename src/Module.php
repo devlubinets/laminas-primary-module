@@ -1,23 +1,23 @@
 <?php
 
-namespace PrimaryModule;
+namespace OrmModule;
 
 /**
  * Class Module
  *
- * @package PrimaryModule
+ * @package OrmModule
  */
 class Module
 {
     /* Common config section */
     public const MODULE_VERSION = "0.1.0";
-    public const MODULE_CONFIG = "primary-config";
+    public const MODULE_CONFIG = "orm-config";
 
     /* Route config section */
-    public const ROUTE_PREFIX = "/primary-module";
-    public const ROUTE_NAME_MODULE = "primary-module";
+    public const ROUTE_PREFIX = "/orm-module-module";
+    public const ROUTE_NAME_MODULE = "orm-module-module";
     public const ROUTE_NAME_ACTIONS = "actions";
-    public const ROUTE_MODULE_CHILD_ACTIONS = "primary-module/actions";
+    public const ROUTE_MODULE_CHILD_ACTIONS = "orm-module-module/actions";
 
     /**
      * @return array<string, string>

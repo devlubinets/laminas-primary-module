@@ -1,13 +1,13 @@
 <?php
 
-namespace PrimaryModule\Process;
+namespace OrmModule\Process;
 
-use PrimaryModule\Request\RequestAbstract;
+use OrmModule\Request\RequestAbstract;
 
 /**
  * Class ProcessAbstract
  *
- * @package PrimaryModule\Process\ProcessAbstract
+ * @package OrmModule\Process\ProcessAbstract
  */
 abstract class ProcessAbstract implements ProcessInterface
 {

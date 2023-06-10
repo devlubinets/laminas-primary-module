@@ -1,11 +1,11 @@
 <?php
 
-namespace PrimaryModule\Response;
+namespace OrmModule\Response;
 
 /**
  * Class ResponseInterface
  *
- * @package PrimaryModule\Response\ResponseInterface
+ * @package OrmModule\Response\ResponseInterface
  */
 interface ResponseInterface
 {

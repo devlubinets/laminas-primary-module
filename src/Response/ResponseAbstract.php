@@ -1,11 +1,11 @@
 <?php
 
-namespace PrimaryModule\Response;
+namespace OrmModule\Response;
 
 /**
  * Class ResponseAbstract
  *
- * @package PrimaryModule\Response\ResponseAbstract
+ * @package OrmModule\Response\ResponseAbstract
  */
 abstract class ResponseAbstract implements ResponseInterface
 {

@@ -1,5 +1,5 @@
 {
-  "name": "project-name/primary-module",
+  "name": "book-my-party/orm-module-module",
   "require": {
     "php": ">=7.4",
     "ext-json": "^7.4",
@@ -13,17 +13,17 @@
   },
   "autoload": {
     "psr-4": {
-      "PrimaryModule\\": "src/"
+      "OrmModule\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "PrimaryModuleTest\\": "test/"
+      "OrmModuleTest\\": "test/"
     }
   },
   "extra": {
     "laminas": {
-      "component": "PrimaryModule"
+      "component": "OrmModule"
     }
   },
   "scripts": {

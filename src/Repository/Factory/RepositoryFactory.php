@@ -1,6 +1,6 @@
 <?php
 
-namespace PrimaryModule\Repository\Factory;
+namespace OrmModule\Repository\Factory;
 
 use Interop\Container\ContainerInterface;
 use Laminas\ServiceManager\Factory\FactoryInterface;
@@ -8,7 +8,7 @@ use Laminas\ServiceManager\Factory\FactoryInterface;
 /**
  * Class RepositoryFactory
  *
- * @package PrimaryModule\Repository\Factory\RepositoryFactory
+ * @package OrmModule\Repository\Factory\RepositoryFactory
  */
 class RepositoryFactory implements FactoryInterface
 {

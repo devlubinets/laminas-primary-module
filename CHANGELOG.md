@@ -7,4 +7,6 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+- MOD-1: Make orm module based on Propel
+
 ### Added

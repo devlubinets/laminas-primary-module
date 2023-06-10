@@ -1,13 +1,13 @@
 <?php
 
-namespace PrimaryModule\Request;
+namespace OrmModule\Request;
 
-use PrimaryModule\Response\ResponseAbstract;
+use OrmModule\Response\ResponseAbstract;
 
 /**
  * Class RequestInterface
  *
- * @package PrimaryModule\Request\RequestInterface
+ * @package OrmModule\Request\RequestInterface
  */
 interface RequestInterface
 {

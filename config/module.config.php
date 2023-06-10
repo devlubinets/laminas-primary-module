@@ -1,15 +1,15 @@
 <?php
 
-namespace PrimaryModule;
+namespace OrmModule;
 
-use PrimaryModule\Controller\PrimaryController;
-use PrimaryModule\Controller\Factory\PrimaryControllerFactory;
-use PrimaryModule\Process\PrimaryProcess;
-use PrimaryModule\Process\Factory\PrimaryProcessFactory;
-use PrimaryModule\Repository\PrimaryRepository;
-use PrimaryModule\Repository\Factory\RepositoryFactory;
-use PrimaryModule\Service\PrimaryService;
-use PrimaryModule\Service\Factory\PrimaryServiceFactory;
+use OrmModule\Controller\OrmController;
+use OrmModule\Controller\Factory\OrmControllerFactory;
+use OrmModule\Process\OrmProcess;
+use OrmModule\Process\Factory\OrmProcessFactory;
+use OrmModule\Repository\OrmRepository;
+use OrmModule\Repository\Factory\RepositoryFactory;
+use OrmModule\Service\OrmService;
+use OrmModule\Service\Factory\OrmServiceFactory;
 use Laminas\Router\Http\Segment;
 
 return [
@@ -20,7 +20,7 @@ return [
                 "options" => [
                     "route" => Module::ROUTE_PREFIX,
                     "defaults" => [
-                        "controller" => PrimaryController::class,
+                        "controller" => OrmController::class,
                         "action" => "index",
                     ],
                 ],
@@ -42,23 +42,23 @@ return [
     ],
     "controllers" => [
         "factories" => [
-            PrimaryController::class => PrimaryControllerFactory::class,
+            OrmController::class => OrmControllerFactory::class,
         ],
     ],
     "service_manager" => [
         "factories" => [
-            PrimaryProcess::class => PrimaryProcessFactory::class,
-            PrimaryRepository::class => RepositoryFactory::class,
-            PrimaryService::class => PrimaryServiceFactory::class,
+            OrmProcess::class => OrmProcessFactory::class,
+            OrmRepository::class => RepositoryFactory::class,
+            OrmService::class => OrmServiceFactory::class,
         ],
     ],
     "view_manager" => [
         "not_found_template" => "error/404",
         "exception_template" => "error/index",
         "template_map" => [
-            "layout/layout" => __DIR__ . "/../view/primary-module/layout.phtml",
-            "error/404" => __DIR__ . "/../view/primary-module/error/404.phtml",
-            "error/index" => __DIR__ . "/../view/primary-module/error/index.phtml",
+            "layout/layout" => __DIR__ . "/../view/orm-module-module/layout.phtml",
+            "error/404" => __DIR__ . "/../view/orm-module-module/error/404.phtml",
+            "error/index" => __DIR__ . "/../view/orm-module-module/error/index.phtml",
         ],
         "template_path_stack" => [
             __DIR__ . "/../view",
