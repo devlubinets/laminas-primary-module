@@ -1,8 +1,8 @@
-# Primary Module
+# {MODULE_NAME} Module
 
 ## Purpose
 
-{PURPOSE DESCRIPTION}
+{PURPOSE_DESCRIPTION}
 
 ## Installation
 
@@ -21,14 +21,14 @@ Once composer is installed, execute the following command in your project root t
     "repositories": [
         {
             "type": "vcs",
-            "url": "git@github.com:devlubinets/laminas-primary-module.git"
+            "url": "{REPO_NAME_SSH}"
         }
     ],
     "require": {   
         ...,
         ...,
         ...,     
-        "iss-module/module-name": "dev-develop",
+        "{PROJECT_NAME}/{MODULE_PACKAGE_NAME}": "dev-develop",
     },
 ```
 
@@ -38,7 +38,7 @@ Once composer is installed, execute the following command in your project root t
 ## Common
 ### Module
 
-That module created based on the primary module [Primary module](https://github.com/devlubinets/laminas-primary-module) and module's init branch pushed to alpha [Primary module repo](https://github.com/devlubinets/laminas-primary-module).
+That module created based on the [{MODULE_PACKAGE_NAME}]({REPO_NAME_SSH}) and module's init branch pushed to [primary module repo](https://github.com/devlubinets/laminas-primary-module).
 
 ### Links
 
