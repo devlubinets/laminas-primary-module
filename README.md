@@ -1,4 +1,4 @@
-# {MODULE_NAME} Module
+# {MODULE_NAME} module
 
 ## Purpose
 
