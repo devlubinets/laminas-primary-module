@@ -7,4 +7,6 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+- CRM-586: Init business event module
+
 ### Added

@@ -1,8 +1,8 @@
-# {MODULE_NAME} module
+# BusinessEvent module
 
 ## Purpose
 
-{PURPOSE_DESCRIPTION}
+BusinessEvent
 
 ## Installation
 
@@ -28,7 +28,7 @@ Once composer is installed, execute the following command in your project root t
         ...,
         ...,
         ...,     
-        "{PROJECT_NAME}/{MODULE_PACKAGE_NAME}": "dev-develop",
+        "/businessevent-module": "dev-develop",
     },
 ```
 
@@ -38,7 +38,7 @@ Once composer is installed, execute the following command in your project root t
 ## Common
 ### Module
 
-That module created based on the [{MODULE_PACKAGE_NAME}]({REPO_NAME_SSH}) and module's init branch pushed to [primary module repo](https://github.com/devlubinets/laminas-primary-module).
+That module created based on the [businessevent-module]({REPO_NAME_SSH}) and module's init branch pushed to [primary module repo](https://github.com/devlubinets/laminas-primary-module).
 
 ### Links
 
