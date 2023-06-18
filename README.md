@@ -1,8 +1,8 @@
-# {MODULE_NAME} module
+# MODULE_NAME module
 
 ## Purpose
 
-{PURPOSE_DESCRIPTION}
+PURPOSE_DESCRIPTION
 
 ## Installation
 
@@ -21,24 +21,24 @@ Once composer is installed, execute the following command in your project root t
     "repositories": [
         {
             "type": "vcs",
-            "url": "{REPO_NAME_SSH}"
+            "url": "REPO_NAME_SSH"
         }
     ],
     "require": {   
         ...,
         ...,
         ...,     
-        "{PROJECT_NAME}/{MODULE_PACKAGE_NAME}": "dev-develop",
+        "PROJECT_NAME/MODULE_PACKAGE_NAME": "dev-develop",
     },
 ```
 
 ### Setup
-{SETUP INSTRUCTION}
+
 
 ## Common
 ### Module
 
-That module created based on the [{MODULE_PACKAGE_NAME}]({REPO_NAME_SSH}) and module's init branch pushed to [primary module repo](https://github.com/devlubinets/laminas-primary-module).
+That module created based on the [MODULE_PACKAGE_NAME]({REPO_NAME_SSH}) and module's init branch pushed to [primary module repo](https://github.com/devlubinets/laminas-primary-module).
 
 ### Links
 
