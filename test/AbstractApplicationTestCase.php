@@ -1,6 +1,6 @@
 <?php
 
-namespace PrimaryModuleTest;
+namespace AuthModuleTest;
 
 use Laminas\Mvc\ApplicationInterface;
 use Laminas\ServiceManager\ServiceLocatorInterface;
@@ -24,7 +24,7 @@ class AbstractApplicationTestCase extends AbstractHttpControllerTestCase
     {
         $moduleConfig = include __DIR__ . "/../config/module.config.php";
         $moduleConfig["view_manager"]["template_map"]["layout/layout"] =
-            __DIR__ . "/../view/primary-module/layout.phtml";
+            __DIR__ . "/../view/auth-module/layout.phtml";
 
         $this->setApplicationConfig(
             ArrayUtils::merge(

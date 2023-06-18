@@ -1,11 +1,11 @@
 <?php
 
-namespace PrimaryModule\Model;
+namespace AuthModule\Model;
 
 /**
  * Class ModelInterface
  *
- * @package PrimaryModule\Model\ModelInterface
+ * @package AuthModule\Model\ModelInterface
  */
 interface ModelInterface
 {

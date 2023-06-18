@@ -1,13 +1,13 @@
 <?php
 
-namespace PrimaryModule\Request;
+namespace AuthModule\Request;
 
-use PrimaryModule\Response\ResponseAbstract;
+use AuthModule\Response\ResponseAbstract;
 
 /**
  * Class RequestInterface
  *
- * @package PrimaryModule\Request\RequestInterface
+ * @package AuthModule\Request\RequestInterface
  */
 interface RequestInterface
 {

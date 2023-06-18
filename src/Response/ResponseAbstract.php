@@ -1,11 +1,11 @@
 <?php
 
-namespace PrimaryModule\Response;
+namespace AuthModule\Response;
 
 /**
  * Class ResponseAbstract
  *
- * @package PrimaryModule\Response\ResponseAbstract
+ * @package AuthModule\Response\ResponseAbstract
  */
 abstract class ResponseAbstract implements ResponseInterface
 {
