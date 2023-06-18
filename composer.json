@@ -1,5 +1,5 @@
 {
-  "name": "project-name/primary-module",
+  "name": "book-my-party/auth-module-module",
   "minimum-stability": "dev",
   "require": {
     "php": "^7.3 || ~8.0.0",
@@ -14,17 +14,17 @@
   },
   "autoload": {
     "psr-4": {
-      "PrimaryModule\\": "src/"
+      "AuthModule\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "PrimaryModuleTest\\": "test/"
+      "AuthModuleTest\\": "test/"
     }
   },
   "extra": {
     "laminas": {
-      "component": "PrimaryModule"
+      "component": "AuthModule"
     }
   },
   "scripts": {

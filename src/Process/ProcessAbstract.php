@@ -1,13 +1,13 @@
 <?php
 
-namespace PrimaryModule\Process;
+namespace AuthModule\Process;
 
-use PrimaryModule\Request\RequestAbstract;
+use AuthModule\Request\RequestAbstract;
 
 /**
  * Class ProcessAbstract
  *
- * @package PrimaryModule\Process\ProcessAbstract
+ * @package AuthModule\Process\ProcessAbstract
  */
 abstract class ProcessAbstract implements ProcessInterface
 {

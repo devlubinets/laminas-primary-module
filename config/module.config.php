@@ -1,15 +1,15 @@
 <?php
 
-namespace PrimaryModule;
+namespace AuthModule;
 
-use PrimaryModule\Controller\PrimaryController;
-use PrimaryModule\Controller\Factory\PrimaryControllerFactory;
-use PrimaryModule\Process\PrimaryProcess;
-use PrimaryModule\Process\Factory\PrimaryProcessFactory;
-use PrimaryModule\Repository\PrimaryRepository;
-use PrimaryModule\Repository\Factory\RepositoryFactory;
-use PrimaryModule\Service\PrimaryService;
-use PrimaryModule\Service\Factory\PrimaryServiceFactory;
+use AuthModule\Controller\AuthController;
+use AuthModule\Controller\Factory\AuthControllerFactory;
+use AuthModule\Process\AuthProcess;
+use AuthModule\Process\Factory\AuthProcessFactory;
+use AuthModule\Repository\AuthRepository;
+use AuthModule\Repository\Factory\RepositoryFactory;
+use AuthModule\Service\AuthService;
+use AuthModule\Service\Factory\AuthServiceFactory;
 use Laminas\Router\Http\Segment;
 
 return [
@@ -20,7 +20,7 @@ return [
                 "options" => [
                     "route" => Module::ROUTE_PREFIX,
                     "defaults" => [
-                        "controller" => PrimaryController::class,
+                        "controller" => AuthController::class,
                         "action" => "index",
                     ],
                 ],
@@ -42,23 +42,23 @@ return [
     ],
     "controllers" => [
         "factories" => [
-            PrimaryController::class => PrimaryControllerFactory::class,
+            AuthController::class => AuthControllerFactory::class,
         ],
     ],
     "service_manager" => [
         "factories" => [
-            PrimaryProcess::class => PrimaryProcessFactory::class,
-            PrimaryRepository::class => RepositoryFactory::class,
-            PrimaryService::class => PrimaryServiceFactory::class,
+            AuthProcess::class => AuthProcessFactory::class,
+            AuthRepository::class => RepositoryFactory::class,
+            AuthService::class => AuthServiceFactory::class,
         ],
     ],
     "view_manager" => [
         "not_found_template" => "error/404",
         "exception_template" => "error/index",
         "template_map" => [
-            "layout/layout" => __DIR__ . "/../view/primary-module/layout.phtml",
-            "error/404" => __DIR__ . "/../view/primary-module/error/404.phtml",
-            "error/index" => __DIR__ . "/../view/primary-module/error/index.phtml",
+            "layout/layout" => __DIR__ . "/../view/auth-module-module/layout.phtml",
+            "error/404" => __DIR__ . "/../view/auth-module-module/error/404.phtml",
+            "error/index" => __DIR__ . "/../view/auth-module-module/error/index.phtml",
         ],
         "template_path_stack" => [
             __DIR__ . "/../view",

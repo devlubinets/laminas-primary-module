@@ -4,7 +4,7 @@ return [
     "modules" => [
         "Laminas\ZendFrameworkBridge",
         "Laminas\Router",
-        "PrimaryModule",
+        "AuthModule",
     ],
     "module_listener_options" => [
         "module_paths" => [

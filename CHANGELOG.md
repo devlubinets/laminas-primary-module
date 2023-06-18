@@ -7,4 +7,6 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+- MOD-2: Init auth module with auth with authorization basic on password and login key pair
+
 ### Added

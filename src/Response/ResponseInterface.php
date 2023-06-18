@@ -1,11 +1,11 @@
 <?php
 
-namespace PrimaryModule\Response;
+namespace AuthModule\Response;
 
 /**
  * Class ResponseInterface
  *
- * @package PrimaryModule\Response\ResponseInterface
+ * @package AuthModule\Response\ResponseInterface
  */
 interface ResponseInterface
 {
